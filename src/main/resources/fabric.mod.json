@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "fixshifttwice",
+	"version": "${version}",
+	"name": "Fix Shift Twice",
+	"description": "Fix when you press shift and sometimes game sneak twice instead sneak just once",
+	"authors": [
+		"MoRinn!"
+	],
+	"contact": {
+		"homepage": "",
+		"sources": ""
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/fixshifttwice/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.riiael.FixShiftTwice"
+		],
+		"client": [
+			"net.riiael.FixShiftTwiceClient"
+		]
+	},
+	"mixins": [
+		"fixshifttwice.mixins.json",
+		{
+			"config": "fixshifttwiceclient.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
