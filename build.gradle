@@ -22,7 +22,7 @@ loom {
 	splitEnvironmentSourceSets()
 
 	mods {
-		"toptenstatuesthatcriedblo0d" {
+		"fixshifttwice" {
 			sourceSet sourceSets.main
 			sourceSet sourceSets.client
 		}
