@@ -3,7 +3,6 @@
 	"package": "net.riiael.mixin.client",
 	"compatibilityLevel": "JAVA_21",
 	"client": [
-		"keymapping.KeyMappingMixin",
 		"packet.ClientPacketListenerMixin"
 	],
 	"injectors": {
