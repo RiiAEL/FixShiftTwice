@@ -30,8 +30,10 @@ public abstract class ClientPacketListenerMixin extends ClientCommonPacketListen
     {
         if (Objects.equals(level.getEntity(packet.id()), minecraft.player))
         {
-            packet.packedItems().removeIf(dataValue -> dataValue.value().equals(EntityDataSerializers.POSE));
+            packet.packedItems().removeIf(dataValue -> dataValue.serializer().equals(EntityDataSerializers.POSE));
         }
         return packet.packedItems();
     }
+
+
 }
