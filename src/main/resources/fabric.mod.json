@@ -5,7 +5,8 @@
 	"name": "Fix Shift Twice",
 	"description": "Fix when you press shift and sometimes game sneak twice instead sneak just once",
 	"authors": [
-		"MoRinn!"
+		"MoRinn!",
+		"SJKZ1!"
 	],
 	"contact": {
 		"homepage": "",
