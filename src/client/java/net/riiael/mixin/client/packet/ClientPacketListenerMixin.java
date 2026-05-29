@@ -28,7 +28,9 @@ public abstract class ClientPacketListenerMixin extends ClientCommonPacketListen
     @Redirect(method = "handleSetEntityData", at = @At(value = "INVOKE", target = "Lnet/minecraft/network/protocol/game/ClientboundSetEntityDataPacket;packedItems()Ljava/util/List;"))
     public List<SynchedEntityData.DataValue<?>> res(ClientboundSetEntityDataPacket packet)
     {
+        if (level.getEntity(packet.id()) == minecraft.player)
         {
+            packet.packedItems().removeIf(v -> v.serializer() == EntityDataSerializers.POSE);
         }
         return packet.packedItems();
     }
