@@ -1,7 +1,7 @@
 {
 	"required": true,
 	"package": "net.riiael.mixin.client",
-	"compatibilityLevel": "JAVA_21",
+	"compatibilityLevel": "JAVA_25",
 	"client": [
 		"packet.ClientPacketListenerMixin"
 	],

@@ -13,6 +13,5 @@ public class FixShiftTwice implements ModInitializer
     @Override
     public void onInitialize()
     {
-
     }
 }
